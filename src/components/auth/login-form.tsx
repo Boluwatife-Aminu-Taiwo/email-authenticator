@@ -31,7 +31,7 @@ export default function LoginForm() {
             <Icons.logo className="h-8 w-8" />
           </Link>
           <h1 className="mb-1 mt-4 text-xl font-semibold">
-            Sign In to Better-Auth Starter Example.
+            Sign In to Purplerain TechSafe Email
           </h1>
           <p className="text-sm">Welcome back! Sign in to continue</p>
         </div>

@@ -60,6 +60,7 @@ export async function signUp(prevState: State, formData: FormData) {
         password,
       },
     });
+    console.log("User created");
   } catch (error) {
     if (error instanceof APIError) {
       switch (error.status) {

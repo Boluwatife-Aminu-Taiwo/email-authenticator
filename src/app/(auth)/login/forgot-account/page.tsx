@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { searchAccount } from "@/lib/actions";
+import { toast } from "sonner";
 
 export default function ForgotAccountPage() {
   const [email, setEmail] = useState("");
@@ -20,6 +21,10 @@ export default function ForgotAccountPage() {
         )}`
       );
     } else {
+      console.log("Account not found");
+      
+      // show an error message to the user
+      toast.error("Account not found. Please sign up.")
       router.push("/sign-up");
     }
   };

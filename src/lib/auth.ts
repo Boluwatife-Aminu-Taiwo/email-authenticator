@@ -7,7 +7,7 @@ import { env } from "../../env";
 
 export const auth = betterAuth({
   database: prismaAdapter(prisma, {
-    provider: "sqlite",
+    provider: "postgresql",
   }),
   emailAndPassword: {
     enabled: true,
@@ -19,8 +19,8 @@ export const auth = betterAuth({
       },
     },
     minPasswordLength: 4,
-    // maxPasswordLength: 128,
-    // autoSignIn: true,
+    maxPasswordLength: 128,
+    autoSignIn: true,
     sendResetPassword: async ({ user, url }) => {
       // Send reset password email
 

@@ -30,7 +30,7 @@ export default function SignupForm() {
             <Icons.logo className="h-8 w-8" />
           </Link>
           <h1 className="text-title mb-1 mt-4 text-xl font-semibold">
-            Sign Up to Better-Auth Starter Example.
+            Sign Up to Purlerain TechSafe Email.
           </h1>
           <p className="text-sm">Welcome! Create an account to get started</p>
         </div>
